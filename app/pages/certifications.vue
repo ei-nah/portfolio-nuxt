@@ -45,7 +45,7 @@
       <div class="modal-box bg-[#0f2a14]/90 border border-emerald-800/40 p-4 max-w-xl relative flex items-center justify-center">
         <button 
           @click="selectedImage = null" 
-          class="btn btn-sm btn-circle btn-ghost absolute right-3 top-3 text-emerald-200 z-10"> ✕ 
+          class="btn btn-md btn-circle btn-ghost absolute right-3 top-3 text-emerald-900 z-10"> ✕ 
         </button>
         
         <img 
