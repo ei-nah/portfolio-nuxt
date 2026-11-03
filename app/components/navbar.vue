@@ -40,13 +40,20 @@
 
         <!-- Mobile Hamburger Menu -->
         <div class="dropdown dropdown-end sm:hidden">
-          <div tabindex="0" role="button" class="btn btn-ghost btn-circle text-[#BFD9C0] hover:bg-emerald-950/50 flex items-center justify-center">
-            <HugeiconsIcon :icon="Menu01Icon" class="w-6 h-6" />
+          <div 
+            tabindex="0" 
+            role="button" 
+            @click="isOpen = !isOpen"
+            class="btn btn-ghost btn-circle text-[#BFD9C0] hover:bg-emerald-950/50 flex items-center justify-center cursor-pointer">
+            <HugeiconsIcon v-if="!isOpen" :icon="Menu01Icon" class="w-6 h-6" />
+            <HugeiconsIcon v-else :icon="Cancel01Icon" class="w-6 h-6" />
           </div>
+
           <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-xl bg-[#111d13] border border-emerald-900/50 rounded-box w-52 text-base">
             <li>
               <NuxtLink 
                 to="/" 
+                @click="closeMenu"
                 class="flex items-center gap-3 py-2 text-[#BFD9C0] hover:text-[#6EC471] focus:bg-transparent active:bg-transparent" 
                 exact-active-class="!bg-transparent !text-[#6EC471]">
                 <HugeiconsIcon :icon="Home07Icon" class="w-5 h-5 shrink-0 text-[#6EC471]"/>
@@ -55,7 +62,8 @@
             </li>
             <li>
               <NuxtLink 
-                to="/about"  
+                to="/about" 
+                @click="closeMenu"
                 class="flex items-center gap-3 py-2 text-[#BFD9C0] hover:text-[#6EC471] focus:bg-transparent active:bg-transparent" 
                 exact-active-class="!bg-transparent !text-[#6EC471]">
                 <HugeiconsIcon :icon="User02Icon" class="w-5 h-5 shrink-0 text-[#6EC471]" />
@@ -65,6 +73,7 @@
             <li>
               <NuxtLink 
                 to="/tech-stack" 
+                @click="closeMenu"
                 class="flex items-center gap-3 py-2 text-[#BFD9C0] hover:text-[#6EC471] focus:bg-transparent active:bg-transparent" 
                 exact-active-class="!bg-transparent !text-[#6EC471]">
                 <HugeiconsIcon :icon="JavaIcon" class="w-5 h-5 shrink-0 text-[#6EC471]"/>
@@ -74,6 +83,7 @@
             <li>
               <NuxtLink 
                 to="/certifications" 
+                @click="closeMenu"
                 class="flex items-center gap-3 py-2 text-[#BFD9C0] hover:text-[#6EC471] focus:bg-transparent active:bg-transparent" 
                 exact-active-class="!bg-transparent !text-[#6EC471]">
                 <HugeiconsIcon :icon="Certificate01Icon" class="w-5 h-5 shrink-0 text-[#6EC471]"/>
@@ -91,9 +101,20 @@
   import { HugeiconsIcon } from '@hugeicons/vue'
   import { 
     Menu01Icon, 
+    Cancel01Icon,
     Home07Icon, 
     User02Icon, 
     JavaIcon, 
     Certificate01Icon
   } from '@hugeicons/core-free-icons'
+
+  // Identify if dropdown is open
+  const isOpen = ref(false)
+
+  // Function to close menu and reset icon state
+  const closeMenu = () => {
+    isOpen.value = false
+    document.activeElement?.blur()
+  }
+
 </script>
