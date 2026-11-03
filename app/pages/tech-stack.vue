@@ -78,9 +78,9 @@
 
     useSeoMeta({
       title: 'Tech-Stack | Stephanie Bernardo',
-      description: 'Programming Languages, Database, and Tools used.',
+      description: 'Programming Languages, Database, and Tools used by Stephanie Bernardo',
       ogTitle: 'Tech-Stack | Stephanie Bernardo',
-      ogDescription: 'Programming Languages, Database, and Tools used.',
+      ogDescription: 'Programming Languages, Database, and Tools used by Stephanie Bernardo.',
     })
 </script>
 

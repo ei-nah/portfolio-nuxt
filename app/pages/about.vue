@@ -1,6 +1,5 @@
 <template>
-  <!-- Main Content Section -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 pt-10">
+  <main class="text-center px-4 mb-10">
     <h1 class="text-4xl font-bold text-center tracking-wide text-[#BFD9C0] mb-6"> About Me </h1>
 
     <div class="flex justify-center">
@@ -30,12 +29,12 @@
 
     useSeoMeta({
     title: 'About Me | Stephanie Bernardo',
-    description: 'Get to know more Stephanie Bernardo',
+    description: 'Get to know Stephanie Bernardo.',
     ogTitle: 'About Me | Stephanie Bernardo',
-    ogDescription: "Learn more about Stephanie Bernardo's background in web development and systems.",
+    ogDescription: "Get to know Stephanie Bernardo.",
     })
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 </style>

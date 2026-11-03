@@ -2,7 +2,7 @@
   <div class="min-h-screen text-[#BFD9C0] font-['Montserrat_Alternates'] pb-20 pt-10">
     
     <main class="text-center px-4 mb-10">
-      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-wide text-[#BFD9C0] drop-shadow-md"> Certifications </h1>
+      <h1 class="text-4xl sm:text-4xl font-extrabold tracking-wide text-[#BFD9C0] drop-shadow-md"> Certifications </h1>
     </main>
 
     <!-- Certifications Grid Container -->
@@ -89,9 +89,9 @@
 
       useSeoMeta({
         title: 'Certifications | Stephanie Bernardo',
-        description: 'An aspiring web developer, UI/UX designer, and system architect with a passion for building user-friendly and efficient systems.',
+        description: "Stephanie's certificates.",
         ogTitle: 'Certifications | Stephanie Bernardo',
-        ogDescription: 'An aspiring web developer, UI/UX designer, and system architect.',
+        ogDescription: "Stephanie's certificates.",
       })
 </script>
 

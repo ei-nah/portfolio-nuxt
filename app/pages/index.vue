@@ -2,15 +2,15 @@
   <div class="flex items-center justify-center my-12 px-4">
     <Card
       cardClass="w-full max-w-2xl bg-base-100/10 backdrop-blur-md shadow-2xl border border-white/10 text-center p-8"
-      bodyClass="items-center text-center p-0"
-    >
+      bodyClass="items-center text-center p-0">
+      
       <div class="avatar justify-center mb-6">
         <div class="w-48 h-48 rounded-full ring ring-emerald-500 ring-offset-base-100 ring-offset-2 overflow-hidden shadow-lg">
           <img src="/image/self-portrait.JPG" alt="Stephanie Bernardo" class="object-cover w-full h-full" />
         </div>
       </div>
 
-      <h1 class="text-3xl md:text-5xl font-extrabold text-emerald-200 tracking-wide"> Stephanie Bernardo </h1>
+      <h1 class="text-4xl md:text-4xl font-extrabold text-emerald-200 tracking-wide"> Stephanie Bernardo </h1>
 
       <p class="mt-2 text-base md:text-xl text-emerald-100/80 leading-relaxed max-w-xl mx-auto">
         An aspiring web developer, UI/UX designer, and system architect with a passion for building user-friendly and efficient systems.
@@ -46,8 +46,8 @@
 
     useSeoMeta({
       title: 'Home | Stephanie Bernardo',
+      description: 'An aspiring web developer, UI/UX designer, and system architect.',
       ogTitle: 'Stephanie Bernardo | Portfolio',
-      description: 'An aspiring web developer, UI/UX designer, and system architect with a passion for building user-friendly and efficient systems.',
       ogDescription: 'An aspiring web developer, UI/UX designer, and system architect.',
       ogImage: '/image/self-portrait.JPG',
       twitterCard: 'summary_large_image',
