@@ -55,7 +55,7 @@
             </li>
             <li>
               <NuxtLink 
-                to="/" 
+                to="/about"  
                 class="flex items-center gap-3 py-2 text-[#BFD9C0] hover:text-[#6EC471] focus:bg-transparent active:bg-transparent" 
                 exact-active-class="!bg-transparent !text-[#6EC471]">
                 <HugeiconsIcon :icon="User02Icon" class="w-5 h-5 shrink-0 text-[#6EC471]" />
@@ -64,7 +64,7 @@
             </li>
             <li>
               <NuxtLink 
-                to="/" 
+                to="/tech-stack" 
                 class="flex items-center gap-3 py-2 text-[#BFD9C0] hover:text-[#6EC471] focus:bg-transparent active:bg-transparent" 
                 exact-active-class="!bg-transparent !text-[#6EC471]">
                 <HugeiconsIcon :icon="JavaIcon" class="w-5 h-5 shrink-0 text-[#6EC471]"/>
@@ -73,7 +73,7 @@
             </li>
             <li>
               <NuxtLink 
-                to="/" 
+                to="/certifications" 
                 class="flex items-center gap-3 py-2 text-[#BFD9C0] hover:text-[#6EC471] focus:bg-transparent active:bg-transparent" 
                 exact-active-class="!bg-transparent !text-[#6EC471]">
                 <HugeiconsIcon :icon="Certificate01Icon" class="w-5 h-5 shrink-0 text-[#6EC471]"/>
